@@ -537,9 +537,8 @@ a[href^=tel] {
 .btn-primary:hover,
 .btn-dark:hover,
 .btn-white.btn-primary:hover {
-  background: black;
-  color: #000;
-  
+  background-color: #be0100;
+  color: white;
 }
 
 .btn-primary:hover:active, .btn-primary:hover:focus,
@@ -548,7 +547,7 @@ a[href^=tel] {
 .btn-white.btn-primary:hover:active,
 .btn-white.btn-primary:hover:focus {
   
-  background-color: black !important;
+  background-color: #be0100 !important;
 }
 
 .general-btn {
@@ -3515,6 +3514,12 @@ label {
 
 #banner-item1{
   background-image: url("/static/images/slider-main/bg-1.png")
+}
+
+/* override */
+#custom-button:hover{
+  background-color: #be0100;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
