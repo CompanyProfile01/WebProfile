@@ -8,5 +8,6 @@ from django.core import serializers
 def show_home(request):
     return render(request, "index.html")
 
-def show_services(request):
-    return render(request)
+def show_services(request, number):
+
+    return render(request, "Groups/group"+ str(number) +".html")
