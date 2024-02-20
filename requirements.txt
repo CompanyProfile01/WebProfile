@@ -10,3 +10,5 @@ django-environ
 django-cors-headers
 dj_database_url
 django_heroku
+django-hitcount
+django-visits
