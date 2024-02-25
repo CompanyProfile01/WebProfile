@@ -61,11 +61,12 @@
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Groups <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="{% url 'main:show_groups' number=1 %}">Group 1</a></li>
-                                <li><a href="{% url 'main:show_groups' number=2 %}">Group 2</a></li>
-                                <li><a href="{% url 'main:show_groups' number=3 %}">Group 3</a></li>
-                                <li><a href="{% url 'main:show_groups' number=4 %}">Group 4</a></li>
-                                <li><a href="{% url 'main:show_groups' number=5 %}">Group 5</a></li>
+                                <li><a href="{% url 'main:show_groups' number=1 %}">PT Notiz Sinergi Nusantara</a></li>
+                                <li><a href="{% url 'main:show_groups' number=2 %}">PT Notiz Karsapangan Global</a></li>
+                                <li><a href="{% url 'main:show_groups' number=3 %}">PT Notiz Sentra Optimum</a></li>
+                                <li><a href="{% url 'main:show_groups' number=4 %}">PT Energi Utama Konstruksi</a></li>
+                                <li><a href="{% url 'main:show_groups' number=5 %}">KJA Sinergi Data</a></li>
+                                <li><a href="{% url 'main:show_groups' number=6 %}">KAP Shinta dan Rekan</a></li>
                             </ul>
                         </li>
                     
@@ -74,35 +75,47 @@
                             <ul class="dropdown-menu" role="menu">
 
                                 <!-- submenu 1 -->
-                                <li><a href="{% url 'main:show_services' number=2 %}">Audit Services </a></li>
-
-                                <!-- submenu 2 -->
-                                <li><a href="{% url 'main:show_services' number=1 %}">Audit Advisory Services </a></li>
-
-                                <!-- submenu 3 -->
-                                <li><a href="{% url 'main:show_services' number=6 %}">Innovation </a></li>
-
-                                <!-- submenu 4 -->
-                                <li><a href="{% url 'main:show_services' number=8 %}">Tax Services </a></li>
-
-                                <!-- submenu 5 -->
-                                <li><a href="{% url 'main:show_services' number=3 %}">Consulting </a></li>
-                                
-                                <!-- submenu 6 -->
-                                <li><a href="{% url 'main:show_services' number=5 %}">Human Capital </a></li>    
-                                
-                                <!-- submenu 7 -->
-                                <li><a href="{% url 'main:show_services' number=4 %}">Financial Advisory </a></li>
-                                
-                                <!-- submenu 7 -->
                                 <li class="dropdown-submenu">
-                                    <a href="#!" class="dropdown-toggle" data-toggle="dropdown">Our Other Advisory</a>
+                                    <a href="{% url 'main:show_services' number=1 %}" class="dropdown-toggle" data-toggle="dropdown">Consulting </a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="{% url 'main:show_services' number=7 %}">Risk Advisory</a></li>
-                                        <li><a href="{% url 'main:show_services' number=9 %}">Technology Risk </a></li>
+                                        <li><a href="{% url 'main:show_services' number=1 %}">Audit </a></li>
+                                        <li><a href="{% url 'main:show_services' number=1 %}">Tax </a></li>
+                                        <li><a href="{% url 'main:show_services' number=1 %}">Accounting </a></li>
+                                        <li><a href="{% url 'main:show_services' number=1 %}">Finance </a></li>
+                                        <li><a href="{% url 'main:show_services' number=1 %}">Management </a></li>
+                                        <li><a href="{% url 'main:show_services' number=1 %}">Human Capital </a></li>
+                                        <li><a href="{% url 'main:show_services' number=1 %}">Risk Management </a></li>
+                                        <li><a href="{% url 'main:show_services' number=1 %}">Technology </a></li>
                                     </ul>
                                 </li>
-                
+
+                                <!-- submenu 2 -->
+                                <li class="dropdown-submenu">
+                                    <a href="{% url 'main:show_services' number=2 %}" class="dropdown-toggle" data-toggle="dropdown">Advisory </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{% url 'main:show_services' number=2 %}">Audit </a></li>
+                                        <li><a href="{% url 'main:show_services' number=2 %}">Tax </a></li>
+                                        <li><a href="{% url 'main:show_services' number=2 %}">Accounting </a></li>
+                                        <li><a href="{% url 'main:show_services' number=2 %}">Finance </a></li>
+                                        <li><a href="{% url 'main:show_services' number=2 %}">Management </a></li>
+                                        <li><a href="{% url 'main:show_services' number=2 %}">Human Capital </a></li>
+                                        <li><a href="{% url 'main:show_services' number=2 %}">Risk Management </a></li>
+                                        <li><a href="{% url 'main:show_services' number=2 %}">Technology </a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- submenu 3 -->
+                                <li><a href="{% url 'main:show_services' number=3 %}">Innovation </a></li>
+
+                                <!-- submenu 4 -->
+                                <li><a href="{% url 'main:show_services' number=4 %}">Transformation </a></li>
+
+                                <!-- submenu 5 -->
+                                <li><a href="{% url 'main:show_services' number=5 %}">Data Analytic </a></li>
+                                
+                                <!-- submenu 6 -->
+                                <li><a href="{% url 'main:show_services' number=6 %}">Training & Workshop </a></li>    
+                                
                             </ul>
                         </li>
                 

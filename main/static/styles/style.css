@@ -744,7 +744,7 @@ ul.navbar-nav > li.active > a {
 }
 
 .header-two .logo img {
-  height: 30px;
+  height: 37px;
 }
 
 /* header right */
@@ -2985,7 +2985,7 @@ img.testimonial-thumb {
 /* Contact Us
 ================================================== */
 .map {
-  height: 450px;
+  height: 575px;
   z-index: 1;
 }
 

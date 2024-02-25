@@ -11,7 +11,7 @@
               <h3 class="box-slide-sub-title">Consulting and Advisory</h3>
               <p class="box-slide-description">Notiz strive to make an impact that matters in everything we do. We don't make complex issues simple, we make them understandable.</p>
               <p>
-                <a href="services.html" class="slider btn btn-primary">Our Services</a>
+                <a href="{% url 'main:show_services' number=1 %}" class="slider btn btn-primary">Our Services</a>
               </p>
           </div>
         </div>
@@ -26,7 +26,7 @@
                 <h2 class="box-slide-title">A total of 68 Clients with</h2>
                 <h3 class="box-slide-sub-title">Projects in various sectors</h3>
                 <p class="box-slide-description">Satisfaction in service delivery, work integrity and professionalism are the main things we put forward.  Notiz prioritizes progress, accompanied by a harmonious balance in business continuity, plays an important role.</p>
-                <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Our Portofolio</a></p>
+                <p><a href="{% url 'main:show_portofolio' %}" class="slider btn btn-primary" aria-label="about-us">Our Portofolio</a></p>
               </div>
           </div>
         </div>
@@ -41,8 +41,8 @@
           <div class="col-md-3 col-sm-6 ts-facts">
  
               <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="100">0</span></h2>
-                <h3 class="ts-facts-title">Total Projects</h3>
+                <h2 class="ts-facts-num"><span class="counterUp" data-count={{viewCount}}>0</span></h2>
+                <h3 class="ts-facts-title">Visitor</h3>
               </div>
           </div><!-- Col end -->
 
@@ -81,7 +81,7 @@
   <div class="container">
     <div class="row text-center">
         <div class="col-12">
-          <h3 class="section-sub-title">Our Services</h3>
+          <h3 class="section-sub-title">Our Business</h3>
         </div>
     </div>
     <!--/ Title row end -->
@@ -93,7 +93,7 @@
                 <img loading="lazy" src="{% static 'images/icon-image/newIcon1.png' %}" alt="https://www.freepik.com/icon/evaluating_12391941#fromView=search&term=audit&track=ais&page=1&position=10&uuid=2f336506-f08b-4be0-8b2d-abf3903d008f Icon by nangicon">
               </div>
               <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="#">Audit Services</a></h3>
+                <h3 class="service-box-title"><a href="#!">Consulting & Advisory</a></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
               </div>
           </div><!-- Service 1 end -->
@@ -103,7 +103,7 @@
                 <img loading="lazy" src="{% static 'images/icon-image/newIcon2.png' %}" alt="https://www.freepik.com/icon/review_3469476#fromView=search&term=audit+advisory&track=ais&page=1&position=1&uuid=3c6fa329-ac7a-4a07-bba5-c37d0b6e20dfIcon by Eucalyp">
               </div>
               <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="#">Audit Advisory Services</a></h3>
+                <h3 class="service-box-title"><a href="#!">Innovation & Development</a></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
               </div>
           </div><!-- Service 2 end -->
@@ -113,7 +113,7 @@
                 <img loading="lazy" src="{% static 'images/icon-image/newIcon3.png' %}"  alt="https://www.freepik.com/icon/product-innovation_13271412#fromView=search&term=innovation&track=ais&page=1&position=9&uuid=6c5d474e-4690-4c00-a777-9cd4d490c2b8 Icon by Freepik">
               </div>
               <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="#">Innovation</a></h3>
+                <h3 class="service-box-title"><a href="#!">Data Analytic</a></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
               </div>
           </div><!-- Service 3 end -->
@@ -125,7 +125,7 @@
                 <img loading="lazy" src="{% static 'images/icon-image/newIcon4.png' %}" alt="https://www.freepik.com/icon/tax_3868269#fromView=search&term=tax+services&track=ais&page=1&position=6&uuid=6fa7e8bf-eaf5-4961-9b52-27374d62c42f Icon by Freepik">
               </div>
               <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="#">Tax Services</a></h3>
+                <h3 class="service-box-title"><a href="#!">Manufacturing</a></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
               </div>
           </div><!-- Service 4 end -->
@@ -135,7 +135,7 @@
                 <img loading="lazy" src="{% static 'images/icon-image/newIcon5.png' %}" alt="https://www.freepik.com/icon/consultation_1469884#fromView=search&term=consulting&track=ais&page=1&position=2&uuid=b31d6085-bd55-4310-9f47-b6542924f021 Icon by Eucalyp">
               </div>
               <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="#">Consulting</a></h3>
+                <h3 class="service-box-title"><a href="#!">Chemical & Engineering</a></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
               </div>
           </div><!-- Service 5 end -->
@@ -145,16 +145,15 @@
                 <img loading="lazy" src="{% static 'images/icon-image/newIcon6.png' %}" alt="https://www.freepik.com/icon/human-capital_10986564#fromView=search&term=human+capital&track=ais&page=1&position=2&uuid=957a3482-6f2f-4900-bc94-4b1c16f43121 Icon by zero_wing">
               </div>
               <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="#">Human Capital</a></h3>
+                <h3 class="service-box-title"><a href="#!">Knowledge Learning</a></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
               </div>
           </div><!-- Service 6 end -->
         </div><!-- Col end -->
     </div><!-- Content row end -->
     <div class="general-btn text-center mt-4">
-        <a class="btn btn-primary" href="news-left-sidebar.html">View All Services</a>
+      <a class="btn btn-primary" href="{% url 'main:show_services' number=1 %}">View Our Business</a>
     </div>
-
 </div>
   <!--/ Container end -->
 </section><!-- Service end -->
